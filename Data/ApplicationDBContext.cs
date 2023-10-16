@@ -12,6 +12,23 @@ namespace APIProductos.Data
         
         }
 
-        DbSet<Producto> Producto {  get; set; }
+        public DbSet<Producto> Producto {  get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Producto>().HasData(
+                
+                new Producto
+                {
+                    IdProducto = 1,
+                    Nombre="Producto1",
+                    Descripcion="Descripcion Producto1",
+                    cantidad=12
+                }
+                
+                );
+        }
+
+
     }
 }
