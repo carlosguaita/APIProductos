@@ -13,6 +13,6 @@ namespace APIProductos.Models
         [Required]
         public int cantidad { get; set; }
 
-       
+        public string urlImage { get; set; }
     }
 }

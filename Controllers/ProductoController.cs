@@ -68,6 +68,7 @@ namespace APIProductos.Controllers
                 producto2.Nombre = producto.Nombre != null ? producto.Nombre : producto2.Nombre;
                 producto2.Descripcion = producto.Descripcion != null ? producto.Descripcion : producto2.Descripcion;
                 producto2.cantidad = producto.cantidad != null ? producto.cantidad : producto2.cantidad;
+                producto2.urlImage = producto.urlImage;
                 _db.Producto.Update(producto2);
                 await _db.SaveChangesAsync();
                 return Ok(producto2);

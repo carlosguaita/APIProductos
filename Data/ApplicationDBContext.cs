@@ -23,7 +23,8 @@ namespace APIProductos.Data
                     IdProducto = 1,
                     Nombre="Producto1",
                     Descripcion="Descripcion Producto1",
-                    cantidad=12
+                    cantidad=12,
+                    urlImage = "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
                 }
                 
                 );
